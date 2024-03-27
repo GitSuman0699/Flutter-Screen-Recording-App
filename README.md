@@ -45,5 +45,4 @@ flutter run
 
 We welcome contributions to this project. Please see the CONTRIBUTING.md file for details.
 
-
-
+<video controls src="flutter_screen_recording_app (1).mp4" title="Sample Video Of App"></video>
