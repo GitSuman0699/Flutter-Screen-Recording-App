@@ -4,7 +4,7 @@
 
 ## See the app in action!
 
-[Watch a video demo of the Flutter Screen Recording App]([link-to-your-video](https://youtube.com/shorts/jg5MoHd8Gs0))
+[Watch a video demo of the Flutter Screen Recording App](https://youtube.com/shorts/jg5MoHd8Gs0)
 
 
 This is a Flutter project for a mobile app that allows users to record their device screen.
