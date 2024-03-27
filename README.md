@@ -1,16 +1,49 @@
 # Flutter-Screen-Recording-App
 
-A new Flutter project.
+## Flutter Screen Recording App
 
-## Getting Started
+This is a Flutter project for a mobile app that allows users to record their device screen.
 
-This project is a starting point for a Flutter application.
+### Features
 
-A few resources to get you started if this is your first Flutter project:
+* Record your device screen with audio.
+* Stop recording and save the video file.
+* (Optional) Share the recorded video.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Getting Started
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project requires Flutter to be installed on your system. You can find installation instructions at the official Flutter website [https://flutter.dev/](https://flutter.dev/).
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/your-username/Flutter-Screen-Recording-App.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd Flutter-Screen-Recording-App
+```
+
+3. Install dependencies:
+
+```bash
+flutter pub get
+```
+
+4. Run the app on your device or emulator:
+
+```bash
+flutter run
+```
+
+
+**Note:** You might need to adjust the dependency versions based on compatibility with your chosen Flutter version.
+
+### Contributing
+
+We welcome contributions to this project. Please see the CONTRIBUTING.md file for details.
+
+
+
