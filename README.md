@@ -1,4 +1,4 @@
-# pavega_assignment
+# Flutter-Screen-Recording-App
 
 A new Flutter project.
 
