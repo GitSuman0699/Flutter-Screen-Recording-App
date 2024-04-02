@@ -3,9 +3,12 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screen_recording/flutter_screen_recording.dart';
 import 'package:open_file/open_file.dart';
+import 'package:pavega_assignment/utils/gallery_saver.dart';
 import 'package:pointycastle/block/aes.dart';
 import 'package:video_thumbnail/video_thumbnail.dart';
 import 'components/recording_settings.dart';
@@ -91,10 +94,26 @@ Future<String> writeRecordingToAppDocuments(String videoPath) async {
   return destinationPath;
 }
 
-stopScreenRecord(WidgetRef ref) async {
+stopScreenRecord(WidgetRef ref, BuildContext context) async {
   String videoPath = await FlutterScreenRecording.stopRecordScreen;
 
-  OpenFile.open(videoPath);
+  GallerySaver.saveVideo(videoPath).then((value) {
+    if (value != null && value) {
+      ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Video Saved Successfully")));
+      // setState(() {
+      //   isLoading = false;
+      // });
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text("Some error occurred in downloading image")));
+      // setState(() {
+      //   isLoading = false;
+      // });
+    }
+  });
+
+  // OpenFile.open(videoPath);
 
   // final savedPath = await writeRecordingToAppDocuments(videoPath);
   // print(savedPath);

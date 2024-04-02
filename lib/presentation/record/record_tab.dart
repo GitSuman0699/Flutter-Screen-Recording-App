@@ -78,7 +78,7 @@ class _RecordTabState extends ConsumerState<RecordTab> {
                     },
                   );
                 } else {
-                  await stopScreenRecord(ref);
+                  await stopScreenRecord(ref, context);
 
                   TimerService.instance.stopTimer(ref);
                 }

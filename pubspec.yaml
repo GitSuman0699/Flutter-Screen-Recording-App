@@ -44,6 +44,8 @@ dependencies:
   pointycastle: ^3.7.4
   video_thumbnail: ^0.5.3
   video_player: ^2.8.3
+  gallery_saver: ^2.3.2
+  http: ^0.13.6
 
 dev_dependencies:
   flutter_test:
